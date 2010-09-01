@@ -1,0 +1,24 @@
+6980000002         - load user input off console to dist go to 2
+2400160003         - store dist to 16 (counter) goto 3
+6900220004         - load 22 (0 constant) to dist goto 4
+2400050006         - store dist to 5 goto 6
+0000000000         - data (0 constant - initial value for f(n-2))
+6900230007         - load 23 (1 constant) to dist goto 7
+2400080009         - store dist to 8 goto 9
+0000000000         - data (1 constant - initial value for f(n-1))
+6500050010         - reset and add to lower from 5 goto 10
+1500080011         - add to lower from 8 goto 12
+6900080012         - load distributor off 8 goto 13
+2400050013         - store distributor to 5 goto 14
+2000080014         - store lower to 8 goto 15
+2000270015         - store lower to 27 goto 16
+6500160017         - reset and add to lower from 17 goto 18
+0000000000         - user input (counter)
+1600230018         - subtract from lower from 23 goto 19
+2000160019         - store lower to 16 goto 20
+4500090020         - branch on non zero either 9 (loop) or 20
+7100270021         - punch data
+0100000000         - halt
+0000000000         - 0 constant
+0000000001         - 1 constant
+~ fibonacci NZW approach including user input and reset() "ability" sdegiorgi

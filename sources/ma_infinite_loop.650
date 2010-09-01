@@ -1,0 +1,13 @@
+~ infinite loop poc with op NZE/45 - thanks to m. akermann
+~ lade 999999998 in lower
+6500040002
+~ lade 666 in upper
+6000050003
+~ branch at not zero to 0000 else continue
+4500010004
+~ STOP
+0100000000
+~ Data:
+9999999998
+0000000666
+

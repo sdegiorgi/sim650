@@ -1,0 +1,35 @@
+History
+
+0.4 beta (_no_ compatibility to prior versions/sources!):
+- major: changed program/drum start to 0001
+- drum (datatype chosen is array) now inits up to drumSize+1 ([0] unused)
+- changed loadSource to reflect that offset
+- adjusted fibobmi.650, fibonze.650, fibonzu.650, jd_division.650 and
+  ma_divide.650
+- added source ma_infinite_loop.650 using an NZE branch to create an
+  endless loop
+- added source fibonze_console_input.650 to demonstrate reading console
+  input for the desired value of n for f(n) (using nze branching)
+  may also be used as reference for "variable initialization"
+- added method explainDrumData() that dumps drum and explains each word
+  (buggy (!!) with constants >99999999 - ambiguity issue with ops, yet
+  no workaround or try/catch)
+- added methods set/getConsoleInput to help simulating console input
+  (readable via address 8000)
+- extended distributor to simulate reads off console (address 8000)
+
+0.3 beta:
+- added method runWithTraces() to run the program with printout of
+  information on Step, Address, Mnemonic, OPCode, D Address, I Address,
+  Distributor, Lower Accu and Upper Accu in a tabular form
+
+0.2 still-beta:
+- distributor now can load data off 8002 and 8003 (acc)
+- added chessboard.650 source
+- changed sim default values of maxIter to 1000 and drumSize to 100
+- ALO Operation (15) now reflects overflow and adds carry to upper acc
+- added checkSource(file) method to auto test sources on plausibility
+
+0.1 very-beta:
+- proof of concept
+

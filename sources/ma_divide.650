@@ -1,0 +1,16 @@
+~ simple division - thanks to m. akermann
+~ lade 0 in Akku links
+6000050002
+~ lade Dividend in Akku rechts
+6500060003
+~ teile durch Divisor in Speicherzelle
+1400070004
+~ STOP!
+0100000000
+~ Speicherstelle für 0
+0000000000
+~ Speicherstelle für Dividend
+0000000034
+~ Speicherstelle für Divisor
+0000000007
+
